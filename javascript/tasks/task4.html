@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 4 - Integrated Post Loader</title>
+</head>
+<body>
+  <h2>Task 4: Integrated Post Loader</h2>
+  <script>
+    function simulateDelay(ms) {
+      return new Promise(resolve => {
+        setTimeout(() => {
+          console.log(`Waited for ${ms} ms`);
+          resolve();
+        }, ms);
+      });
+    }
+
+    async function getPostUsingAsync(postId) {
+      const url = `https://jsonplaceholder.typicode.com/posts/${postId}`;
+      console.log("Fetching post using async/await...");
+
+      try {
+        const response = await fetch(url);
+        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+        const data = await response.json();
+        const wordCount = data.body.trim().split(/\s+/).length;
+        console.log("Title:", data.title.toUpperCase());
+        console.log("Word Count:", wordCount);
+      } catch (error) {
+        console.error("Error fetching post:", error.message);
+      }
+    }
+
+    async function loadPost(postId) {
+      await simulateDelay(1000);
+      await getPostUsingAsync(postId);
+      console.log("Finished!");
+    }
+
+    loadPost(1);
+  </script>
+</body>
+</html>

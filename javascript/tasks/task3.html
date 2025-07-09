@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 3 - Simulate Delay</title>
+</head>
+<body>
+  <h2>Task 3: Simulate Delay</h2>
+  <script>
+    function simulateDelay(ms) {
+      return new Promise(resolve => {
+        setTimeout(() => {
+          console.log(`Waited for ${ms} ms`);
+          resolve();
+        }, ms);
+      });
+    }
+
+    simulateDelay(2000).then(() => {
+      console.log("Now fetching post...");
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 1 - Fetch using .then()/.catch()</title>
+</head>
+<body>
+  <h2>Task 1: Fetch using .then()/.catch()</h2>
+  <script>
+    function getPostUsingThen(postId) {
+      const url = `https://jsonplaceholder.typicode.com/posts/${postId}`;
+
+      fetch(url)
+        .then(response => {
+          if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+          return response.json();
+        })
+        .then(data => {
+          console.log("Using .then()/.catch():");
+          console.log("Title:", data.title);
+          console.log("Body:", data.body);
+        })
+        .catch(error => {
+          console.error("Error fetching post:", error.message);
+        });
+    }
+
+    // Call the function
+    getPostUsingThen(1);
+  </script>
+</body>
+</html>

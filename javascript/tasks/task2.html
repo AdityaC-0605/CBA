@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 2 - Fetch using async/await</title>
+</head>
+<body>
+  <h2>Task 2: Fetch using async/await</h2>
+  <script>
+    async function getPostUsingAsync(postId) {
+      const url = `https://jsonplaceholder.typicode.com/posts/${postId}`;
+      console.log("Fetching post using async/await...");
+
+      try {
+        const response = await fetch(url);
+        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+
+        const data = await response.json();
+        const wordCount = data.body.trim().split(/\s+/).length;
+
+        console.log("Title:", data.title.toUpperCase());
+        console.log("Word Count:", wordCount);
+      } catch (error) {
+        console.error("Error fetching post:", error.message);
+      }
+    }
+
+    // Call the function
+    getPostUsingAsync(1);
+  </script>
+</body>
+</html>

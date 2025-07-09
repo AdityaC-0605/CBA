@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object Demo</title>
+</head>
+
+<body>
+  <h1>Object Demo</h1>
+  <script>
+    let Course = {
+      cname: "Programming in Javascript",
+      duration: 30,
+      studentName: "Sheetal Kumar",
+      studentId: 101,
+      price: 5000
+    }
+    console.log(Course);
+
+    let courseObj = new Object();
+    courseObj.cname = "Programming in Python";
+    courseObj.duration = 40;
+    courseObj.studentName = "Rahul Kumar";
+    courseObj.studentId = 102;
+    courseObj.price = 6000;
+    document.write("<h2>Course Details</h2>");
+    document.write("<p>Course Name: " + courseObj.cname + "</p>");
+    document.write("<p>Duration: " + courseObj.duration + " hours</p>");
+    document.write("<p>Student Name: " + courseObj.studentName + "</p>");
+    document.write("<p>Student ID: " + courseObj.studentId + "</p>");
+    document.write("<p>Price: ₹" + courseObj.price + "</p>");
+    document.write("<p>Course Object Data is:" + Course["cname"]);
+    let key = "duration";
+    document.write("<p>Course Duration is: " + Course[key] + " hours</p>");
+    let Employee = {
+      empId: 301,
+      empName: "Punit Kumar",
+      empSalary: 50000,
+      empDesignation: "Software Engineer",
+      address: {
+        street: "44 Keshav road",
+        city: "Delhi",
+        state: "Delhi",
+        country: "India"
+      }
+    };
+    document.write("<h2>Employee Details</h2>");
+    document.write(Employee.address.city + "<br>");
+    document.write(Employee["address"]["street"] + "<br>");
+     document.write(Object.keys(Employee)+ "<br>");
+     document.write(Object.values(Employee)+ "<br>");
+     document.write(Object.entries(Employee)+ "<br>");
+    document.write("<h2>Employee Address</h2>");
+  </script>
+</body>
+
+</html>

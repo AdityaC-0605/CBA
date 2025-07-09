@@ -1,0 +1,25 @@
+You are asked to build and interactive
+ Product review form for an ecommerce website
+
+ Task
+ 1. Collecting the users name reviews/feedback
+ 2. Display the live characters counted from 
+ users typing.
+ 3. if any required fields are empty.
+ 4. Allow users to rate the product using
+ a star rating system(1 - 5)
+ 5. After successful submission:
+  Showing a Thank you message.
+
+  store the submission in localStorage 
+  it should not be lost on page refresh.
+
+  Also  display last submitted feedback form details below the form
+
+
+feature
+input field access  = getElementById, QuerySelector
+live character count = keyup event
+form validation = javascript conditionals
+star rating click events 
+reset the form

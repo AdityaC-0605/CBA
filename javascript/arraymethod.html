@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods in JavaScript</title>  
+  </head>
+  <body>
+    <script>
+      let mixedValues = [];
+      mixedValues.push(1, "Hello", true, null, { name: "Object" }, [1, 2, 3]);
+      document.write("<h1>Mixed Values Array</h1>");
+      document.write("The array contains: " + mixedValues + "<br>");
+      console.log("Mixed Values Array:", mixedValues);
+    mixedValues.push(4,1.3,4,5,6);
+    document.write("<h2>After adding more values:</h2>");
+    document.write("The array now contains: " + mixedValues + "<br>");
+    mixedValues.pop(); // Remove the last element
+    document.write("<h2>After removing the last value:</h2>");    
+    document.write("The array now contains: " + mixedValues + "<br>");
+  mixedValues.shift();
+  newArray = ["Pune","Kolkatta","Delhi", "Mumbai"];
+  document.write("The array now contains: " + newArray + "<br>");
+newArray.unshift("Haryana");
+document.write("<h2>After adding a new first element:</h2>"); 
+document.write("The array now contains: " + newArray + "<br>");
+newArray.splice(2,3,"Inserted Element");
+document.write("<h2>After inserting an element at index 2:</h2>");    
+document.write("The array now contains: " + newArray + "<br>");
+slicedcitites = newArray.slice(1,3);
+document.write("<h2>After slicing the array from index 1 to 3:</h2>");    
+document.write("The sliced array contains: " + slicedcitites + "<br>");
+
+  </script>
+
+
+  </body>
+  </html>

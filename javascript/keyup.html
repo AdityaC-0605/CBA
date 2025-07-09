@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Event Example</title>
+    </head>
+    <body>
+      <input type="text" id="somemessage" placeholder="Type some message here...">
+      <p id="displayText"></p>
+
+
+
+    <script>
+       document.getElementById("somemessage").addEventListener("keyup",function(e){
+        document.getElementById("displayText").textContent = "your typed text is :"+ e.target.value;
+             
+      })
+
+
+    </script>
+    </body>
+
+</html>

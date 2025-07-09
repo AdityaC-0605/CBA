@@ -1,0 +1,9 @@
+String => "KLM"
+Number => 123 or 6.789
+Boolean => true or false
+Null => null
+undefined => undefined
+// Symbol => Symbol('description')
+// BigInt => 123n or 12345678901234567890n      
+// Object => { key: "value", number: 123, boolean: true, null: null, undefined: undefined }
+// Array => [1, 2, 3] or ["a", "b",

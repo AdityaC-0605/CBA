@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable Shadowing Example</title>
+    <body>
+    <h1>Variable Shadowing Example</h1>
+    <script>
+      let x  =90;
+      function showValue(){
+        let x=91;
+        document.write("value of x inside function is:" + x + "<br>");
+        {
+          let x=92;
+          document.write("value of x inside block is:" + x + "<br>");
+        }
+        document.write("value of x after block is:" + x + "<br>");
+      }
+      showValue();
+      document.write("value of x outside function is:" + x + "<br>");
+      
+
+    </script>
+    </body>
+</html>

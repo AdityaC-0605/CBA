@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Event Example</title>
+    </head>
+    <body>
+      <p id="text">first Text</p>
+      <button onclick="Change()">Click to Change</button>
+
+        <script>
+          function Change(){
+            document.getElementById("text").innerHTML = "Changed Text";
+            document.getElementById("text").style.color = "red";
+            document.getElementById("text").style.fontSize = "20px";  
+            
+          }
+
+
+
+        </script>
+      </body>
+    </html>

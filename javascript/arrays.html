@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays in JavaScript</title>
+</head>
+<body>
+  <script>
+    let weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday","Friday"];
+        document.write("<h1>Weekdays</h1>");
+        document.write("the element at index 1 is:" + weekdays[1] + "<br>");
+        weekdays[1] = "Tuesday"; // Update the second element
+        //document.write("the element at index 1 is now:" + weekdays[1] + "<br>");
+        //for(let i=0;i<weekdays.length;i++){
+        //    document.write(weekdays[i] + "<br>");
+        //} 
+        
+        document.write(weekdays.length + "<br>");
+
+        weekdays.forEach(function(day) {
+            document.write(day + "<br>");
+        });
+        weekdays.push("Saturday", "Sunday"); // Add elements to the end
+        document.write("<h2>After adding weekdays:</h2>");
+        weekdays.forEach(function(day) {
+            document.write(day + "<br>");
+        });
+        
+
+      </script>
+</body>
+</html>

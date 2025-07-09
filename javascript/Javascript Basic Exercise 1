@@ -1,0 +1,18 @@
+Write a program in javascript to check the input number is largest or smallest
+Write  a program in javasript to check the input number is even or odd
+(Using if else if)
+Write js program to generate sum of user input numbers with while and for loop
+Write a js program to reverse a string 
+6.write grades of students if he/she scores (using ternary operator)
+marks>= 90 =>A+ grade
+marks>=80 =>A grade
+marks>=70 => B grade
+7.write a table for input given by user and print the table
+in tabular form
+8.write javascript program to create function based calculator
+switch(choice)
+case 1: addition()
+break;
+case 2: subtraction()
+
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<script>
+
+let str= "5678";
+console.log(Number(str) + 1);
+let ans = Number(str) + 1
+console.log(typeof ans); // "number"
+let ans2 = String(ans);
+console.log(ans2); // "5679"  
+console.log(typeof ans2); // "string"
+let num2 = 0;
+console.log(num2); // 1
+console.log(typeof num2); // "number"
+num2=Boolean(num2);
+console.log(num2) 
+console.log(typeof num2); // "boolean"
+var something = undefined; // undefined variable
+console.log(something); // undefined  
+console.log(typeof something); // "undefined"
+something = Boolean(something); // convert to boolean
+console.log(something); // false
+console.log(typeof something); // "boolean"
+//var i = 90
+//console.log(typeof i) // "number"
+//let j = 'Narayana'
+//let balance = 1000.5
+//console.log(typeof j) // "string"
+//console.log(typeof balance)
+
+function test_variable () {
+  var num1 = 'hello'//var is function scoped
+  let num2 = 122; // let is block scoped
+  const num3 = 123.45; //block scoped and cannot be reassigned
+  console.log(typeof i) // "number"
+  j = 444
+  console.log(typeof j) // "number"
+  balance = 899.56
+  console.log(typeof balance)
+  console.log(balance)
+}
+test_variable()
+// console.log(i);
+//console.log(num2);
+//console.log(num3); -->
+</script>
+</html>

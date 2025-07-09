@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While Loop Example</title>
+    </head>
+    <body>
+      <script>
+        // Initialize an array with some values
+        let numbers = [1, 2, 3, 4, 5];
+        
+        // Initialize a counter variable
+        //let value = 0;
+          for(let value of numbers)
+          {
+            document.writeln(value + "<br>"); // Output the current element
+          }
+
+
+          //break and continue example
+          for(let i=1;i<=5;i++){
+            if(i === 3){
+              document.writeln("Skipping number 3<br>"); // Skip the number 3
+              break;
+            }
+          }
+          for(let i=1;i<=5;i++){
+            if(i === 3){
+              document.writeln("Skipping number 3<br>"); // Skip the number 3
+              continue; 
+              document.write(i);// Skip the rest of the loop for this iteration
+            }
+            document.write(i);// Skip the rest of the loop for this iteration
+
+            //document.writeln("Number: " + i + "<br>"); // Output the current number
+          }
+        
+      </script>
+    </body>
+</html>

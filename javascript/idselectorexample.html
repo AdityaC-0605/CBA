@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Demo</title>
+    </head>
+<body>
+    <h1>Selector demo</h1>
+    <p  id="desh"> Country </p>
+    <p class="gt">Welcome to javascript</p>
+    <script>
+
+      let data = document.getElementById("desh");
+      data.style.color = "red";
+ let mymessage = document.querySelector(".gt");
+mymessage.style.color = "blue";
+mymessage.style.fontSize = "30px";
+document.write("<h2>Using getElementById</h2>");
+document.write("Text is:"+ data.innerHTML + "<br>");
+document.write("Color is:"+ data.style.color + "<br>");
+console.log(data.textContent)
+document.write("<h2>Using querySelector</h2>");
+document.write("Text is:"+ mymessage.innerHTML + "<br>");
+document.write("Color is:"+ mymessage.style.color + "<br>");
+    
+</script>
+
+</body>
+</html>

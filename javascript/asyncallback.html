@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Event Example</title>
+    </head>
+    <body>
+    <script>
+       
+        function greetMessage()
+        {
+          document.write("Hello in 3 seconds..");
+
+        }
+        function getValues(value)
+        {
+            document.write(value + "<br>");
+        }
+        function getAddedValues(x,y,callback)
+        {
+           const sum = x+y;
+           callback(sum);
+
+        }
+    getAddedValues(3,4,getValues);//sync callback
+    getAddedValues(5,6,getValues);//sync callback
+
+     setTimeout(greetMessage, 3000)//async callback
+
+        
+    </script>
+    </body>
+</html>
